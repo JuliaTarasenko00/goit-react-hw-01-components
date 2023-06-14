@@ -14,6 +14,6 @@ export const TransactionsItem = ({ type, amount, currency }) => {
 
 TransactionsItem.protoType = {
   type: PropTypes.string.isRequired,
-  type: PropTypes.number.isRequired,
+  amount: PropTypes.number.isRequired,
   currency: PropTypes.number.isRequired,
 };
