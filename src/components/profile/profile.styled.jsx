@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';;
 
 export const ContainerProfile = styled.div`
   margin: 0 auto;
