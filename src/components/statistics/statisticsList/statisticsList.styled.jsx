@@ -7,6 +7,7 @@ export const Statistic = styled.section`
   box-shadow: -4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 `;
 export const StatisticsTitle = styled.h2`
+  text-transform: uppercase;
   text-align: center;
   background-color: #ffffffbd;
   padding: 10px 0 10px 0;
