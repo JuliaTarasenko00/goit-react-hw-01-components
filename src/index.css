@@ -1,7 +1,8 @@
 @import-normalize; /* bring in normalize.css styles */
 
 body {
-background-color:#51475e96;
+  margin: 0;
+  background-color: #51475e96;
 }
 
 code {
@@ -16,7 +17,7 @@ h3 {
   margin: 0;
 }
 
-ul{
+ul {
   margin: 0;
   padding-left: 0;
   list-style: none;
