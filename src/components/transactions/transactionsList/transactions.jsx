@@ -1,15 +1,16 @@
 import { TransactionsItem } from '../transactionsItem/transactionsItem';
+import { Transaction, TransactionHead } from './transaction.styled'
 
 export const Transactions = ({ lists }) => {
   return (
-    <table>
-      <thead>
+    <Transaction>
+      <TransactionHead>
         <tr>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>
         </tr>
-      </thead>
+      </TransactionHead>
       {lists.map(({ type, id, amount, currency }) => (
         <TransactionsItem
           key={id}
@@ -18,6 +19,6 @@ export const Transactions = ({ lists }) => {
           currency={currency}
         />
       ))}
-    </table>
+    </Transaction>
   );
 };

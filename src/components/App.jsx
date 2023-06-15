@@ -10,9 +10,11 @@ import { FriendList } from './friends/friendList/friendList';
 import transactions from 'data/transactions';
 import { Transactions } from './transactions/transactionsList/transactions';
 
+import { Container } from './App.styled'
+
 export const App = () => {
   return (
-    <div>
+    <Container>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -25,6 +27,6 @@ export const App = () => {
       <StatisticsList title="Upload stats" items={data} />
       <FriendList lists={friends} />
       <Transactions lists={transactions} />
-    </div>
+    </Container>
   );
 };
