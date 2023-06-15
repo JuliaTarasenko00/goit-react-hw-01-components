@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
-import { ContainerProfile, 
-  ProfileImg, 
-  ProfileName, 
-  ProfileList, 
+import {
+  ContainerProfile,
+  ProfileImg,
+  ProfileName,
+  ProfileList,
   ProfileItem,
   ProfileText,
-  ProfileSpan
-} from './profile.styled'
+  ProfileSpan,
+} from './profile.styled';
 
 export const Profile = ({
   username,

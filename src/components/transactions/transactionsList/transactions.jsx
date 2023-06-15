@@ -1,5 +1,5 @@
 import { TransactionsItem } from '../transactionsItem/transactionsItem';
-import { Transaction, TransactionHead } from './transaction.styled'
+import { Transaction, TransactionHead } from './transaction.styled';
 
 export const Transactions = ({ lists }) => {
   return (

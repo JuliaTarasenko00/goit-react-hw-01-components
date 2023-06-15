@@ -1,5 +1,9 @@
 import { Statistics } from '../statisticsItem/statisticsItem';
-import { Statistic, StatisticsTitle, StatisticsLists } from './statisticsList.styled'
+import {
+  Statistic,
+  StatisticsTitle,
+  StatisticsLists,
+} from './statisticsList.styled';
 
 export const StatisticsList = ({ items, title }) => {
   return (

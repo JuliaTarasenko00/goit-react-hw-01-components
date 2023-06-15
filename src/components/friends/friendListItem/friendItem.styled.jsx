@@ -1,30 +1,35 @@
-import styled from '@emotion/styled'
-
+import styled from '@emotion/styled';
 
 export const FriendItems = styled.li`
-display: flex;
-    flex-direction: row;
-    height: 70px;
-    align-items: center;
-    box-shadow: -4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-    background-color: white;
-`
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  align-items: center;
+  box-shadow: -4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  background-color: #ffffffbd;
+  border-radius: 20px;
+`;
 export const FriendIsOnline = styled.div`
-width: 15px;
-height: 15px;
-border-radius: 50%;
-margin-right: 15px;
-margin-left: 15px;
-background-color: ${({isOnline}) => {
-    if(isOnline){
-        return 'green';
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-left: 15px;
+  background-color: ${({ isOnline }) => {
+    if (isOnline) {
+      return 'green';
     }
     return 'red';
-}}
-`
+  }};
+`;
 export const FriendText = styled.p`
-margin-left: 30px;
-font-weight: 500;
-font-size: 20px;
-line-height: 1.75;
+  margin-left: 30px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.75;
+`;
+export const Friend = styled.img`
+:hover {
+  transform: scale(1.2);
+}
 `

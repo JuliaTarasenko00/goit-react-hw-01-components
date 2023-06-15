@@ -1,13 +1,13 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
 export const StatisticsItem = styled.li`
-display: flex;
-flex-direction: column;
-width: 20%;
-text-align: center;
-height: 50px;
-padding-top: 5px;
-:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  text-align: center;
+  height: 50px;
+  padding-top: 5px;
+  :nth-of-type(1) {
     background-color: #ff0000ab;
   }
 
@@ -26,4 +26,8 @@ padding-top: 5px;
   :nth-of-type(5) {
     background-color: #800080bd;
   }
+`;
+
+export const Statistic = styled.span`
+font-weight: 700;
 `
