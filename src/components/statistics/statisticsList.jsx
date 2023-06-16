@@ -4,9 +4,8 @@ import {
   StatisticsTitle,
   StatisticsLists,
   StatisticsItem,
-  Statistics
+  Statistics,
 } from './statisticsList.styled';
-
 
 export const StatisticsList = ({ items, title }) => {
   return (
@@ -15,9 +14,9 @@ export const StatisticsList = ({ items, title }) => {
       <StatisticsLists>
         {items.map(({ label, percentage, id }) => (
           <StatisticsItem key={id} percentage={percentage}>
-          <Statistics>{label}</Statistics>
-          <span>{percentage}%</span>
-        </StatisticsItem>
+            <Statistics>{label}</Statistics>
+            <span>{percentage}%</span>
+          </StatisticsItem>
         ))}
       </StatisticsLists>
     </Statistic>
@@ -25,7 +24,12 @@ export const StatisticsList = ({ items, title }) => {
 };
 
 StatisticsList.protoType = {
-  percentage: PropTypes.number.isRequired,
-  label: PropTypes.number.isRequired,
-  id: PropTypes.number.isRequired,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    }).isRequired
+  ).isRequired,
+  title: PropTypes.string,
 };

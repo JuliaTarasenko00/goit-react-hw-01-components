@@ -1,5 +1,10 @@
 import PropTypes from 'prop-types';
-import { Transaction, TransactionHead, TransactionsTb, TransactionTd } from './transaction.styled';
+import {
+  Transaction,
+  TransactionHead,
+  TransactionsTb,
+  TransactionTd,
+} from './transaction.styled';
 
 export const Transactions = ({ lists }) => {
   return (
@@ -13,17 +18,16 @@ export const Transactions = ({ lists }) => {
       </TransactionHead>
       {lists.map(({ type, id, amount, currency }) => (
         <TransactionsTb key={id}>
-        <tr>
-          <TransactionTd>{type}</TransactionTd>
-          <TransactionTd>{amount}</TransactionTd>
-          <TransactionTd>{currency}</TransactionTd>
-        </tr>
-      </TransactionsTb>
+          <tr>
+            <TransactionTd>{type}</TransactionTd>
+            <TransactionTd>{amount}</TransactionTd>
+            <TransactionTd>{currency}</TransactionTd>
+          </tr>
+        </TransactionsTb>
       ))}
     </Transaction>
   );
 };
-
 
 Transactions.propTypes = {
   lists: PropTypes.arrayOf(

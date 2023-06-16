@@ -9,15 +9,7 @@ import {
   ProfileSpan,
 } from './profile.styled';
 
-export const Profile = ({
-  username,
-  tag,
-  location,
-  avatar,
-  followers,
-  views,
-  likes,
-}) => {
+export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <ContainerProfile>
       <div>
@@ -29,15 +21,15 @@ export const Profile = ({
       <ProfileList>
         <ProfileItem>
           <ProfileSpan>Followers</ProfileSpan>
-          <span>{followers}</span>
+          <span>{stats.followers}</span>
         </ProfileItem>
         <ProfileItem>
           <ProfileSpan>Views</ProfileSpan>
-          <span>{views}</span>
+          <span>{stats.views}</span>
         </ProfileItem>
         <ProfileItem>
           <ProfileSpan>Likes</ProfileSpan>
-          <span>{likes}</span>
+          <span>{stats.likes}</span>
         </ProfileItem>
       </ProfileList>
     </ContainerProfile>
@@ -49,7 +41,9 @@ Profile.propTypes = {
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
-  followers: PropTypes.number.isRequired,
-  views: PropTypes.number.isRequired,
-  likes: PropTypes.number.isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }).isRequired,
 };
