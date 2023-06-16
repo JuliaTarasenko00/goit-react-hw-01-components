@@ -12,3 +12,17 @@ export const TransactionHead = styled.thead`
   background-color: #004aff3b;
   height: 50px;
 `;
+export const TransactionsTb = styled.tbody`
+  text-align: center;
+  height: 30px;
+  background-color: #dddddd99;
+  :nth-of-type(2n) {
+    background-color: #88888870;
+  }
+  :hover {
+    color: blue;
+  }
+`;
+export const TransactionTd = styled.td`
+  border: 2px solid white;
+`;

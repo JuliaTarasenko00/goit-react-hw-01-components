@@ -2,13 +2,13 @@ import user from 'data/user';
 import { Profile } from './profile/profile';
 
 import data from 'data/data';
-import { StatisticsList } from './statistics/statisticsList/statisticsList';
+import { StatisticsList } from './statistics/statisticsList';
 
 import friends from 'data/friends';
 import { FriendList } from './friends/friendList/friendList';
 
 import transactions from 'data/transactions';
-import { Transactions } from './transactions/transactionsList/transactions';
+import { Transactions } from './transactions/transactions';
 
 import { Container } from './App.styled'
 
